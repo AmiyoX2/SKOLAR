@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset ="UTF-8">
+        <META name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radio buttons</title>
+    </head>
+    <body>
+        <form action="submit-form" method="post">
+            <label for="fname">Username:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your username"><br>
+            <label for="gender">Gender:</label><br>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label><br>
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label><br>
+                <label>
+                    <input type="radio" name="gender" value="Others">
+                    Others
+                </label><br>
+            </div>
+            <div class="select-group">
+                <label for="Country">Choose a country:</label>
+                <select id="Country" name="Country" required>
+                    <option value="" disabled selected>Select a Country</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="afghanistan">Afghanistan</option>
+                    <option value="sri lanka">Sri Lanka</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
