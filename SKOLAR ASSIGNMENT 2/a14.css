@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-50px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+     
+  }
+
+  @keyframes bounce_stop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+     
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    text-size-adjust: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 2s ease-in-out 0.5s; 
+    font-weight: bold;
+    color: rgb(6, 9, 9);
+    font-size: 20px;
+    animation: bounce 2s ease infinite;
+  }
+  
+  .box:hover {
+    animation: bounce_stop 2s ease infinite;
+    background-color: rgb(59, 154, 129);
+    width: 300px; 
+    height: 300px;
+    color: rgb(244, 248, 247);
+    font-size: 40px;
+    font-weight: bold;
+  }
+  

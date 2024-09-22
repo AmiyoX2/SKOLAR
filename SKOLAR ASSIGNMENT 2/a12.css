@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1;
+}
+
+.all {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.static {
+    position: static;
+    background-color: lightseagreen;
+    z-index: 1;
+}
+
+.relative {
+    position: relative;
+    background-color: cornflowerblue;
+    top: 2px;
+    left: 70px;
+    z-index: 3; 
+}
+
+.absolute {
+    position: absolute;
+    top: 70px; 
+    left: 50px;
+    background-color: tomato;
+    width: 500px;
+    z-index: 2;
+}
+
+.fixed {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    background-color: darkorange;
+    width: 200px;
+    z-index: 2;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: purple;
+    z-index: 1;
+}
+
+.content {
+    height: 2000px;
+    background-color: lightgray;
+    padding: 50px;
+    left: 30px;
+    font-size: 1.2em;
+}

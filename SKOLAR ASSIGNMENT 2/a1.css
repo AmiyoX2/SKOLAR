@@ -1,0 +1,24 @@
+p {
+    color: #da1f1f;
+    line-height: 1.6;
+}
+.highlight {
+    background-color: #00d0ff;
+    padding: 5px;
+}
+#Title {
+    color: #00cc30;
+    font-size: 2em;
+    text-align: center;
+}
+a[target="link"] {
+    color: #009900;
+    text-decoration: none;
+}
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}

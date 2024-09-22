@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="a10.css">
+</head>
+<body>
+    <h1>Responsive Image Example</h1>
+    <img src="a10.jpg" alt="A large scenic view">
+
+    <picture>
+        <source media="(min-width: 800px)" srcset="a10.jpg">
+        <source media="(min-width: 800px)" srcset="a10.jpg">
+        <img src="a10.jpg" alt="A scenic view across devices">
+    </picture>
+
+    <div class="image-container">
+        <img src="a10.jpg" alt="Cropped image with object-fit">
+    </div>
+</body>
+</html>

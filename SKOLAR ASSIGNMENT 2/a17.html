@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset ="UTF-8">
+        <META name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms CSS</title>
+        <link rel="stylesheet" href="a17.css">
+    </head>
+        <body>
+            <h1>Sample Form</h1>
+            <form action="submit-form">
+                <label for="fname">Username:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your username" required><br>
+                <label for="lname">Email address:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="eg.- bhuvan21@gmail.com" required><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" required><br><br>
+                <select id="Country" name="Country" required>
+                    <option value="" disabled selected>Select a Country</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="afghanistan">Afghanistan</option>
+                    <option value="sri lanka">Sri Lanka</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="others">Others</option>
+                </select>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a></label><br><br>
+                <button>Submit</button>
+          </form>
+        </body>
+</html>

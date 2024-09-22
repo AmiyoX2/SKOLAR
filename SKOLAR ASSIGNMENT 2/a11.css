@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1;
+}
+
+.all {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.static {
+    position: static;
+    background-color: lightseagreen;
+}
+
+.relative {
+    position: relative;
+    background-color: cornflowerblue;
+    top: 20px; 
+}
+
+.absolute {
+    position: absolute;
+    top: 70px; 
+    left: 30px;
+    background-color: tomato;
+    width: 500px;
+}
+
+.fixed {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: darkorange;
+    width: 200px;
+    z-index: 1;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: purple;
+}
+
+.content {
+    height: 2000px;
+    background-color: lightgray;
+    padding: 50px;
+    left: 30px;
+    font-size: 1.2em;
+}
