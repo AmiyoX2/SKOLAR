@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS Framework</title>
+    <link rel="stylesheet" href="a20.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Register</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <span class="icon-placeholder">&#128100;</span> 
+                    <input type="text" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <span class="icon-placeholder">&#9993;</span> 
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <span class="icon-placeholder">&#128274;</span> 
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <span class="icon-placeholder">&#128274;</span> 
+                    <input type="password" name="CPassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn-custom" value="Register">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forget Password</a></span>
+                    <span><a href="#">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="checkmark">&#10003;</div> 
+        <h2>Thank You</h2>
+        <p>You have registered successfully!</p>
+        <a href="#"><button onclick="CloseSlide()">OK</button></a>
+    </div>
+
+    <script>
+        function validation() {
+            var username = document.Formfill.Username.value;
+            var email = document.Formfill.Email.value;
+            var password = document.Formfill.Password.value;
+            var cPassword = document.Formfill.CPassword.value;
+
+            if (username == "") {
+                document.getElementById("result").innerHTML = "Enter Username*";
+                return false;
+            } else if (username.length < 8) {
+                document.getElementById("result").innerHTML = "At least Eight letters*";
+                return false;
+            } else if (email == "") {
+                document.getElementById("result").innerHTML = "Enter your Email";
+                return false;
+            } else if (password == "") {
+                document.getElementById("result").innerHTML = "Enter Password";
+                return false;
+            } else if (password.length < 6) {
+                document.getElementById("result").innerHTML = "Password must be 6-digits";
+                return false;
+            } else if (cPassword == "") {
+                document.getElementById("result").innerHTML = "Enter Confirm Password";
+                return false;
+            } else if (cPassword !== password) {
+                document.getElementById("result").innerHTML = "Password doesn't match";
+                return false;
+            } else {
+                localStorage.setItem('registeredUsername', username);
+                localStorage.setItem('registeredPassword', password);
+
+                document.getElementById('popup').classList.add("open-slide");
+                return false;
+            }
+        }
+
+        function CloseSlide() {
+            document.getElementById('popup').classList.remove('open-slide');
+        }
+    </script>
+</body>
+
+</html>

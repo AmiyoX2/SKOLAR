@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    text-size-adjust: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 2s ease-in-out 0.5s; 
+    font-weight: bold;
+    color: aqua;
+    font-size: medium;
+  }
+  
+  .box:hover {
+    background-color: rgb(146, 110, 230);
+    width: 300px; 
+    height: 300px;
+    color: aquamarine;
+    font-size: large;
+    font-weight: bold;
+  }
+  
